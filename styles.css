@@ -1,0 +1,22 @@
+:root{
+  --bg: #0f172a;
+  --panel: #111827;
+  --accent: #7c3aed;
+  --muted: #9ca3af;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial; background:var(--bg); color:#e6eef8; display:flex; align-items:center; justify-content:center; height:100vh; margin:0}
+.calculator{width:360px; background:var(--panel); padding:16px; border-radius:12px; box-shadow:0 10px 30px rgba(2,6,23,0.7)}
+.calculator header{display:flex; justify-content:space-between; align-items:center; margin-bottom:8px}
+.calculator h1{font-size:16px;margin:0}
+.mode button{background:transparent;border:1px solid #374151;padding:6px 8px;border-radius:6px;color:var(--muted)}
+.display{background:#020617;padding:12px;border-radius:8px;margin-bottom:12px}
+#screen{width:100%;font-size:22px;background:transparent;border:0;color:#fff;outline:none}
+#subscreen{font-size:12px;color:var(--muted);height:16px}
+.keys{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.btn{padding:12px;border-radius:8px;border:0;background:#0b1220;color:#e6eef8;font-weight:600;cursor:pointer}
+.btn.op{background:#1f2937}
+.btn.func{background:#111827}
+.btn.control{background:#374151}
+.btn.equal{grid-column:5 / 6;background:var(--accent);color:#fff}
+footer{margin-top:10px;text-align:center;color:var(--muted)}
