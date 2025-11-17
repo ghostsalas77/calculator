@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calculator">
+    <header>
+      <h1>Scientific Calculator</h1>
+      <div class="mode">
+        <button id="mode-toggle">DEG</button>
+      </div>
+    </header>
+
+    <div class="display">
+      <div id="memory-indicator"> </div>
+      <input id="screen" type="text" readonly />
+      <div id="subscreen"></div>
+    </div>
+
+    <div class="keys">
+      <!-- row 1 -->
+      <button class="btn func" data-action="mc">MC</button>
+      <button class="btn func" data-action="mr">MR</button>
+      <button class="btn func" data-action="mplus">M+</button>
+      <button class="btn func" data-action="mminus">M-</button>
+      <button class="btn func" data-action="back">⌫</button>
+
+      <!-- row 2 -->
+      <button class="btn func" data-value="("> ( </button>
+      <button class="btn func" data-value=")"> ) </button>
+      <button class="btn func" data-action="pow2">x²</button>
+      <button class="btn func" data-action="pow3">x³</button>
+      <button class="btn op" data-action="divide">÷</button>
+
+      <!-- row 3 -->
+      <button class="btn func" data-action="sin">sin</button>
+      <button class="btn func" data-action="cos">cos</button>
+      <button class="btn func" data-action="tan">tan</button>
+      <button class="btn func" data-action="ln">ln</button>
+      <button class="btn op" data-value="*">×</button>
+
+      <!-- row 4 -->
+      <button class="btn func" data-action="asin">asin</button>
+      <button class="btn func" data-action="acos">acos</button>
+      <button class="btn func" data-action="atan">atan</button>
+      <button class="btn func" data-action="log10">log</button>
+      <button class="btn op" data-value="-">−</button>
+
+      <!-- row 5 -->
+      <button class="btn num" data-value="7">7</button>
+      <button class="btn num" data-value="8">8</button>
+      <button class="btn num" data-value="9">9</button>
+      <button class="btn func" data-action="sqrt">√</button>
+      <button class="btn op" data-value="+">+</button>
+
+      <!-- row 6 -->
+      <button class="btn num" data-value="4">4</button>
+      <button class="btn num" data-value="5">5</button>
+      <button class="btn num" data-value="6">6</button>
+      <button class="btn func" data-action="pow">xʸ</button>
+      <button class="btn func" data-action="percent">%</button>
+
+      <!-- row 7 -->
+      <button class="btn num" data-value="1">1</button>
+      <button class="btn num" data-value="2">2</button>
+      <button class="btn num" data-value="3">3</button>
+      <button class="btn func" data-action="fact">!</button>
+      <button class="btn control" data-action="ac">AC</button>
+
+      <!-- row 8 -->
+      <button class="btn num" data-value="0">0</button>
+      <button class="btn num" data-value=".">.</button>
+      <button class="btn control" data-action="neg">+/-</button>
+      <button class="btn equal" data-action="equals">=</button>
+    </div>
+
+    <footer>
+      <small>Made with ❤️ — Copy, fork and improve</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
